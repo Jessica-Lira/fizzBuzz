@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz challenge</title>
+
+    <style>
+        body{
+            text-align: center;
+            padding: 0 10%;
+        }
+    </style>
+
+    <script>
+        var output = [];
+        
+            function fizzBuzz(){
+                for(var count = 1; count <= 100; count++){
+                    if((count % 3) === 0 && (count % 5) === 0){ //o 1o da lista assim passa por tds condicoes
+                        output.push("FizzBuzz");
+                    }
+                    else if((count % 3) === 0){
+                        output.push("Fizz");
+                    }
+                    else if((count % 5) === 0){
+                        output.push("Buzz");
+                    }
+                    else{
+                        output.push(count);
+                    }
+                }
+                    console.log(output);
+                
+            }
+        fizzBuzz(); //para funcionar tem que escrever a função no console se n estiver no loop
+    </script>
+</head>
+<body>
+    <h1>FizzBuzz challenge</h1>
+    <img src="imgchildren.png" alt="children-playing-fizzbuzz">
+    <p>Write a program that prints the numbers from <strong>1 to 100</strong>. 
+        But for multiples of three print <em>"Fizz"</em> instead of the number 
+        and for the multiples of five print <em>"Buzz"</em>. 
+        For numbers which are multiples of both three and five print <em>"FizzBuzz"</em>.</p>
+</body>
+</html>
